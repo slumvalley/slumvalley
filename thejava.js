@@ -19,5 +19,5 @@ function calculate() {
   });
   
   alert(str);
-  
+  return false;
 }
