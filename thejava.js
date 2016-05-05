@@ -8,7 +8,7 @@ function init() {
   'use strict';
 
 
- document.getElementById('theForm').onsubmit = function() {addEmployee();};
+ document.getElementById('theForm').onsubmit = addEmployee();
   return false;
 }
 
