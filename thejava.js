@@ -2,7 +2,7 @@ var customers = [];
 var num = 0;
 
 
-window.addEventListener('load', init, false);
+window.onload = init;
 
 function init() {
   'use strict';
@@ -60,6 +60,7 @@ function tryLogin() {
       x = true;
       y = i;
     }
+    return false;
   }
   
   if(x) {
