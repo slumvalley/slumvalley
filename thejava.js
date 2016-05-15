@@ -60,7 +60,7 @@ function tryLogin() {
       x = true;
       y = i;
     }
-    return false;
+
   }
   
   if(x) {
@@ -69,7 +69,7 @@ function tryLogin() {
   else {
     document.getElementById('status').innerHTML =("That is incorrect.");
   }
-  
+  return false;
 }
 
 
