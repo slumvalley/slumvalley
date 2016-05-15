@@ -41,10 +41,7 @@ function addEmployee() {
   return false;
 }
 
-tryLogin() {
-  alert("hello there");
-  return false;
-}
+
 
 function getID() {
   
