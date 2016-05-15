@@ -19,9 +19,10 @@ function addEmployee() {
   var fname = document.getElementById('fname').value;
   var lname = document.getElementById('lname').value;
   var email = document.getElementById('email').value;
+  var pass = document.getElementById('password').value;
 
   
-  var emp = {first:fname, last:lname, email:email};
+  var emp = {first:fname, last:lname, email:email, password:pass};
   
   var idnum = getID();
   
