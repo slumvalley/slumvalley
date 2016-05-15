@@ -43,7 +43,7 @@ function addEmployee() {
 
 tryLogin() {
   document.getElementById("status").innerHTML=("Thank You");
-  return false;
+  
 }
 
 
