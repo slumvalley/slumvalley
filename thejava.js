@@ -7,7 +7,7 @@ window.onload = init;
 function init() {
   'use strict';
 
-  
+
  document.getElementById('theForm').onsubmit = addEmployee;
   
 }
@@ -18,10 +18,9 @@ function addEmployee() {
   var fname = document.getElementById('fname').value;
   var lname = document.getElementById('lname').value;
   var email = document.getElementById('email').value;
-  var pass = document.getElementById('password').value;
 
   
-  var emp = {first:fname, last:lname, email:email, password:pass};
+  var emp = {first:fname, last:lname, email:email};
   
   var idnum = getID();
   
@@ -32,49 +31,15 @@ function addEmployee() {
   console.log(customers[num].last);
   console.log(customers[num].email);
   console.log(customers[num].employeeID);
-  console.log(customers[num].password);
   var d = Date();
   num+=1;
   
- document.getElementById("confirm").innerHTML=("You Have Successfully Registered  <br> Name: " + customers[num-1].last + ", " + customers[num-1].first + "<br> Email: " + customers[num-1].email + "<br> Confirmation Number: " + customers[num-1].employeeID + "<br> Date Added: " + d );
+ document.getElementById("confirm").innerHTML=("You Have Successfully Registered  <br> Name: " + customers[num-1].last + ", " + customers[num-1].first + "<br> Email: " + customers[num-1].email + "<br> Confirmation Number: " + customers[num-1].employeeID + "<br> Hire Date: " + d + "<br> Number of Employees: " + num );
   
   console.log(customers);
   
   return false;
 }
-
-
-function tryLogin() {
-  
-  var un = document.getElementById('un').value;
-  var pw = document.getElementById('pw').value;
-  
-  if(num===0) {
-    document.getElementById('status').innerHTML=("Not yet registered.");
-    return false;
-  }
-  var x = false;
-  var y = 0;
-  for(var i = 0; i < num; i++) {
-    if(customers[i].email==un && customers[i].password==pw) {
-      x = true;
-      y = i;
-    }
-
-  }
-  
-  if(x) {
-    document.getElementById('status').innerHTML=("Thank You, " + customers[y].first);
-  }
-  else {
-    document.getElementById('status').innerHTML =("That is incorrect.");
-  }
-  return false;
-}
-
-
-
-
 
 function getID() {
   
@@ -92,4 +57,3 @@ function getID() {
   
   
 }
-
