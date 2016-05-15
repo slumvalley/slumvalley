@@ -9,6 +9,7 @@ function init() {
 
 
  document.getElementById('theForm').onsubmit = addEmployee;
+ document.getElementById('login').onsubmit = tryLogin;
   
 }
 
@@ -65,7 +66,7 @@ function tryLogin() {
   else {
     document.getElementById('status').innerHTML =("That is incorrect.");
   }
-  
+  return false;
 }
 
 
