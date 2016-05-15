@@ -9,7 +9,7 @@ function init() {
 
 
 document.getElementById('theForm').onsubmit = addEmployee;
- return false;
+
   
 }
 
