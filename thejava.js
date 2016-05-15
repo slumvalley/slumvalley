@@ -41,6 +41,10 @@ function addEmployee() {
   return false;
 }
 
+tryLogin() {
+  document.getElementById("status").innerHTML=("Thank You");
+  return false;
+}
 
 
 function getID() {
