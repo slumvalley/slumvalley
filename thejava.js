@@ -9,7 +9,7 @@ function init() {
 
 
 document.getElementById('theForm').onsubmit = addEmployee;
- 
+ return false;
   
 }
 
@@ -35,6 +35,7 @@ function addEmployee() {
 
   num+=1;
   
+  alert("hello");
  
   console.log(customers);
   
