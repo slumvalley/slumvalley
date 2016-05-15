@@ -34,7 +34,7 @@ function addEmployee() {
   var d = Date();
   num+=1;
   
- document.getElementById("confirm").innerHTML=("You Have Successfully Registered  <br> Name: " + customers[num-1].last + ", " + customers[num-1].first + "<br> Email: " + customers[num-1].email + "<br> Confirmation Number: " + customers[num-1].employeeID + "<br> Hire Date: " + d + "<br> Number of Employees: " + num );
+ 
   
   console.log(customers);
   
