@@ -2,12 +2,12 @@ var customers = [];
 var num = 0;
 
 
-window.onload = init;
+window.addEventListener('load', init, false);
 
 function init() {
   'use strict';
 
-
+  
  document.getElementById('theForm').onsubmit = addEmployee;
   
 }
@@ -68,8 +68,10 @@ function tryLogin() {
   else {
     document.getElementById('status').innerHTML =("That is incorrect.");
   }
-  return false;
+  
 }
+
+
 
 
 
