@@ -41,6 +41,35 @@ function addEmployee() {
   return false;
 }
 
+function tryLogin() {
+  
+  var un = document.getElementById('un').value;
+  var pw = document.getElementById('pw').value;
+  
+  if(num===0) {
+    document.getElementById('status').innerHTML=("Not yet registered.");
+    return false;
+  }
+  var x = false;
+  var y = 0;
+  for(var i = 0; i < num; i++) {
+    if(customers[i].email==un && customers[i].password==pw) {
+      x = true;
+      y = i;
+    }
+  }
+  
+  if(x) {
+    document.getElementById('status').innerHTML=("Thank You, " + customers[y].first);
+  }
+  else {
+    document.getElementById('status').innerHTML =("That is incorrect.");
+  }
+  
+}
+
+
+
 function getID() {
   
   var temp = Math.floor(10000000 + Math.random() * 90000000);
