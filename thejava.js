@@ -41,6 +41,11 @@ function addEmployee() {
   return false;
 }
 
+tryLogin() {
+  alert("hello there");
+  return false;
+}
+
 function getID() {
   
   var temp = Math.floor(10000000 + Math.random() * 90000000);
