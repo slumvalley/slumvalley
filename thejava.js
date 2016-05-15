@@ -20,6 +20,7 @@ function addEmployee() {
   var lname = document.getElementById('lname').value;
   var email = document.getElementById('email').value;
   var pass = document.getElementById('password').value;
+  
 
   
   var emp = {first:fname, last:lname, email:email, password:pass};
@@ -33,6 +34,7 @@ function addEmployee() {
   console.log(customers[num].last);
   console.log(customers[num].email);
   console.log(customers[num].employeeID);
+  console.log(customers[num].password);
   var d = Date();
   num+=1;
   
