@@ -1,5 +1,6 @@
 var customers = [];
 var num = 0;
+var loggedin = false;
 
 
 window.onload = init;
@@ -59,6 +60,7 @@ function tryLogin() {
   for(var i = 0; i < num; i++) {
     if(customers[i].email==un && customers[i].password==pw) {
       x = true;
+      loggedin= true;
       y = i;
     }
   }
@@ -92,8 +94,21 @@ function getID() {
 }
 
 function addToCart() {
-    var x = document.getElementById("jersey").checked;
-    document.getElementById("demo").innerHTML = "All Items Added To Cart";
+    var a = document.getElementById("jersey").checked;
+    var b = document.getElementById("pizza").checked;
+    var c = document.getElementById("arabic").checked;
+    var d = document.getElementById("camo").checked;
+    var e = document.getElementById("trunks").checked;
+    var f = document.getElementById("flamingo").checked;
+    
+    if(a || b || c || d || e || f && loggedin) {
+      document.getElementById("demo").innerHTML = "All Items Added To Cart";
+    }
+    else {
+      document.getElementById("demo").innerHTML = "You are not logged in or no items selected."
+    }
+    
+    
 }
 
 
