@@ -2,6 +2,7 @@ var customers = [];
 var num = 0;
 var loggedin = false;
 var products = [];
+var stopint;
 
 var pizza = {title:"pizza", price:25, desc:"LA Cheese Strapback - $25"};
 var arabic = {title:"arabic", price:30, desc:"Badlands Arabic Tee - $30"};
@@ -201,7 +202,7 @@ function startTimer(duration, display) {
     };
     // we don't want to wait a full second before the timer starts
     timer();
-    setInterval(timer, 1000);
+    stopint= setInterval(timer, 1000);
 }
 
 function clearCart() {
@@ -212,8 +213,7 @@ function clearCart() {
   document.getElementById("flamingo").checked = false;
   addToCart();
     var  display = document.querySelector('#time');
-    startTimer(0, display);
-    document.getElementById("time").innerHTML = "";
+clearInterval(stopint);
   
 }
 
