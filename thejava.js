@@ -211,6 +211,9 @@ function clearCart() {
   document.getElementById("trunks").checked = false;
   document.getElementById("flamingo").checked = false;
   addToCart();
+    var  display = document.querySelector('#time');
+    startTimer(0, display);
+    document.getElementById("time").innerHTML = "";
   
 }
 
