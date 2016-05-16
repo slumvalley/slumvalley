@@ -3,6 +3,19 @@ var num = 0;
 var loggedin = false;
 var products = [];
 
+var pizza = {title:"pizza", price:25, desc:"LA Cheese Strapback"};
+var arabic = {title:"arabic", price:30, desc:"Badlands Arabic Tee"};
+var camo = {title:"camo", price:40, desc:"Badlands Camo Shirt"};
+var jersey = {title:"jersey", price:35, desc:"Badlands Jersey"};
+var trunks = {title:"trunks", price:30, desc:"LA Cross Trunks"};
+var flamingo = {title:"flamingo", price:25, desc:"Badlands Flamingo Hat"};
+products[0]= pizza;
+products[1]= arabic;
+products[2]= camo;
+products[3]= jersey;
+products[4]= trunks;
+products[5]= flamingo;
+
 
 
 window.onload = init;
@@ -96,12 +109,15 @@ function getID() {
 }
 
 function addToCart() {
-    var a = document.getElementById("jersey").checked;
-    var b = document.getElementById("pizza").checked;
-    var c = document.getElementById("arabic").checked;
-    var d = document.getElementById("camo").checked;
+    
+    var a = document.getElementById("pizza").checked;
+    var b = document.getElementById("arabic").checked;
+    var c = document.getElementById("camo").checked;
+    var d = document.getElementById("jersey").checked;
     var e = document.getElementById("trunks").checked;
     var f = document.getElementById("flamingo").checked;
+    
+    
     
     if((a || b || c || d || e || f) && loggedin==true) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
