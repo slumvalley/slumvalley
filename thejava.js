@@ -151,8 +151,8 @@ function addToCart() {
     
     if((a || b || c || d || e || f) && loggedin==true) {
       var oneMinute = 60;
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
+      var  display = document.querySelector('#time');
+    startTimer(oneMinute, display);
     
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
       document.getElementById("cart").innerHTML = "<center><img src=http://i.imgur.com/0V4zrBw.jpg?1><br><br><br><h1>Items In Your Cart:</h1><br><h3>"
