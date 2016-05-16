@@ -158,7 +158,7 @@ function addToCart() {
     
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
       document.getElementById("cart").innerHTML = "<center><img src=http://i.imgur.com/0V4zrBw.jpg?1><br><br><br><h1>Items In Your Cart:</h1><br><h3>"
-                                                  + receipt + "<br>" + "<hr><br>Your Total Is: $" + total + "</h3></center>";
+                                                  + receipt + "<br>" + "<hr><br>Your Total Is: $" + total + "</h3><br><h2>Your Cart Will Empty In:</h2><br></center>";
     }
     else {
       if(loggedin==false) {
@@ -214,6 +214,7 @@ function clearCart() {
   addToCart();
     var  display = document.querySelector('#time');
 clearInterval(stopint);
+document.getElementById("time").innerHTML = "";
   
 }
 
