@@ -3,12 +3,12 @@ var num = 0;
 var loggedin = false;
 var products = [];
 
-var pizza = {title:"pizza", price:25, desc:"LA Cheese Strapback - 25"};
-var arabic = {title:"arabic", price:30, desc:"Badlands Arabic Tee"};
-var camo = {title:"camo", price:40, desc:"Badlands Camo Shirt"};
-var jersey = {title:"jersey", price:35, desc:"Badlands Jersey"};
-var trunks = {title:"trunks", price:30, desc:"LA Cross Trunks"};
-var flamingo = {title:"flamingo", price:25, desc:"Badlands Flamingo Hat"};
+var pizza = {title:"pizza", price:25, desc:"LA Cheese Strapback - $25"};
+var arabic = {title:"arabic", price:30, desc:"Badlands Arabic Tee - $30"};
+var camo = {title:"camo", price:40, desc:"Badlands Camo Shirt - $40"};
+var jersey = {title:"jersey", price:35, desc:"Badlands Jersey - $35"};
+var trunks = {title:"trunks", price:30, desc:"LA Cross Trunks - $30"};
+var flamingo = {title:"flamingo", price:25, desc:"Badlands Flamingo Hat - $25"};
 products[0]= pizza;
 products[1]= arabic;
 products[2]= camo;
@@ -152,7 +152,7 @@ function addToCart() {
     if((a || b || c || d || e || f) && loggedin==true) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
       document.getElementById("cart").innerHTML = "<h1>Items In Your Cart:</h1><br>"
-                                                  + receipt + "<br>" + "<hr><br>Your Total Is: " + total;
+                                                  + receipt + "<br>" + "<hr><br>Your Total Is: $" + total;
     }
     else {
       if(loggedin==false) {
