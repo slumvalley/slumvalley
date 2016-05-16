@@ -114,6 +114,7 @@ function addToCart() {
       }
       else {
         document.getElementById("demo").innerHTML = "There are no items selected.";
+        document.getElementById("cart").innerHTML= "";
         
       }
       
