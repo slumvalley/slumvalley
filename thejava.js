@@ -105,7 +105,13 @@ function addToCart() {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
     }
     else {
-      document.getElementById("demo").innerHTML = "You are not logged in or no items selected."
+      if(loggedin==false) {
+        document.getElementById("demo").innerHTML = "You are not logged in.";
+      }
+      else {
+        document.getElementById("demo").innerHTML = "There are no items selected.";
+      }
+      
     }
     
     
