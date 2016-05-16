@@ -92,7 +92,7 @@ function getID() {
 }
 
 function myFunction() {
-    var x = document.getElementById("myCheck").checked;
+    var x = document.getElementById("jersey").checked;
     document.getElementById("demo").innerHTML = x;
 }
 
