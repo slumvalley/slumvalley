@@ -124,6 +124,26 @@ function addToCart() {
       receipt = receipt.concat(products[0].desc, space);
       total+=products[0].price;
     }
+    if(b==true) {
+      receipt = receipt.concat(products[1].desc, space);
+      total+=products[1].price;
+    }
+    if(c==true) {
+      receipt = receipt.concat(products[2].desc, space);
+      total+=products[2].price;
+    }
+    if(d==true) {
+      receipt = receipt.concat(products[3].desc, space);
+      total+=products[3].price;
+    }
+    if(e==true) {
+      receipt = receipt.concat(products[4].desc, space);
+      total+=products[4].price;
+    }
+    if(f==true) {
+      receipt = receipt.concat(products[5].desc, space);
+      total+=products[5].price;
+    }
     
     
     
