@@ -103,7 +103,7 @@ function addToCart() {
     
     if((a || b || c || d || e || f) && loggedin==true) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
-      document.getElementById("cart").innerHTML = "These Are The Items In Your Cart"
+      document.getElementById("cart").innerHTML = "<h1>These Are The Items In Your Cart</h1>"
                                                   + " ..........";
     }
     else {
