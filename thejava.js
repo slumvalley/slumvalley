@@ -150,9 +150,10 @@ function addToCart() {
     
     
     if((a || b || c || d || e || f) && loggedin==true) {
-      var oneMinute = 60;
+      var oneMinute = 30;
       var  display = document.querySelector('#time');
     startTimer(oneMinute, display);
+    setTimeout(clearCart, 30000);
     
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
       document.getElementById("cart").innerHTML = "<center><img src=http://i.imgur.com/0V4zrBw.jpg?1><br><br><br><h1>Items In Your Cart:</h1><br><h3>"
@@ -204,9 +205,12 @@ function startTimer(duration, display) {
 }
 
 function clearCart() {
-  document.getElementById("myCheck").checked = false;
-  document.getElementById("myCheck").checked = false;
-  document.getElementById("myCheck").checked = false;
+  document.getElementById("pizza").checked = false;
+  document.getElementById("arabic").checked = false;
+  document.getElementById("camo").checked = false;
+  document.getElementById("trunks").checked = false;
+  document.getElementById("flamingo").checked = false;
+  addToCart();
   
 }
 
