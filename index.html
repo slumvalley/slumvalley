@@ -11,14 +11,18 @@
 </head>
 <body>
   <script src="thejava.js"></script>
+  
+  
     <center>
      <img src = http://i.imgur.com/n3HpBFG.jpg></img><br><BR>
- 
-    <img src = http://i.imgur.com/CZMF03r.jpg?1>  </img>
-  <img src = http://i.imgur.com/OMowal8.jpg?1></img>
-  <img src = http://i.imgur.com/qLfoo4d.jpg?1></img>
-  </center>
-   <div>
+ </center>
+        <center>
+            <span onclick="show('Page1');"><img src = http://i.imgur.com/CZMF03r.jpg?1>  </img></span>, 
+            <span onclick="show('Page2');"><img src = http://i.imgur.com/OMowal8.jpg?1></img></span>, 
+            <span onclick="show('Page3');"><img src = http://i.imgur.com/qLfoo4d.jpg?1></img></span>.
+      </center>
+  
+   <div id="Page1" class="page" style="">
      <center>
      <table id = "thetable">
        <tr>
@@ -89,6 +93,16 @@
 
     
   </div>
+  
+  <div id="Page2" class="page" style="display:none">
+        Content of page 2
+    </div>
+    <div id="Page3" class="page" style="display:none">
+        Content of page 3
+    </div>
+  
+  
+  
   
 </body>
 </html>
