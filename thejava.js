@@ -3,7 +3,7 @@ var num = 0;
 var loggedin = false;
 var products = [];
 
-var pizza = {title:"pizza", price:25, desc:"LA Cheese Strapback"};
+var pizza = {title:"pizza", price:25, desc:"LA Cheese Strapback - 25"};
 var arabic = {title:"arabic", price:30, desc:"Badlands Arabic Tee"};
 var camo = {title:"camo", price:40, desc:"Badlands Camo Shirt"};
 var jersey = {title:"jersey", price:35, desc:"Badlands Jersey"};
@@ -117,12 +117,22 @@ function addToCart() {
     var e = document.getElementById("trunks").checked;
     var f = document.getElementById("flamingo").checked;
     
+    var receipt = "";
+    var space = "<br>";
+    total = 0;
+    if(a==true) {
+      receipt = receipt.concat(products[0].desc, space);
+      total+=products[0].price;
+    }
+    
+    
+    
     
     
     if((a || b || c || d || e || f) && loggedin==true) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
       document.getElementById("cart").innerHTML = "<h1>Items In Your Cart:</h1><br>"
-                                                  + "...";
+                                                  + receipt + "<br>" + total;
     }
     else {
       if(loggedin==false) {
