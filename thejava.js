@@ -101,7 +101,7 @@ function addToCart() {
     var e = document.getElementById("trunks").checked;
     var f = document.getElementById("flamingo").checked;
     
-    if(a || b || c || d || e || f && loggedin) {
+    if((a || b || c || d || e || f) && loggedin) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
     }
     else {
