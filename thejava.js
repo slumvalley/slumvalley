@@ -91,9 +91,9 @@ function getID() {
   
 }
 
-function myFunction() {
+function addToCart() {
     var x = document.getElementById("jersey").checked;
-    document.getElementById("demo").innerHTML = x;
+    document.getElementById("demo").innerHTML = "All Items Added To Cart";
 }
 
 
