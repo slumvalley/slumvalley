@@ -151,7 +151,7 @@ function addToCart() {
     
     if((a || b || c || d || e || f) && loggedin==true) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
-      document.getElementById("cart").innerHTML = "<center><h1>Items In Your Cart:</h1><br><h3>"
+      document.getElementById("cart").innerHTML = "<center><img src=http://i.imgur.com/0V4zrBw.jpg?1><h1>Items In Your Cart:</h1><br><h3>"
                                                   + receipt + "<br>" + "<hr><br>Your Total Is: $" + total + "</h3></center>";
     }
     else {
