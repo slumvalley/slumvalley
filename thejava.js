@@ -151,8 +151,8 @@ function addToCart() {
     
     if((a || b || c || d || e || f) && loggedin==true) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
-      document.getElementById("cart").innerHTML = "<h1>Items In Your Cart:</h1><br>"
-                                                  + receipt + "<br>" + "<hr><br>Your Total Is: $" + total;
+      document.getElementById("cart").innerHTML = "<center><h1>Items In Your Cart:</h1><br>"
+                                                  + receipt + "<br>" + "<hr><br>Your Total Is: $" + total + "</center>";
     }
     else {
       if(loggedin==false) {
