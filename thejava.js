@@ -91,7 +91,10 @@ function getID() {
   
 }
 
-
+function myFunction() {
+    var x = document.getElementById("myCheck").checked;
+    document.getElementById("demo").innerHTML = x;
+}
 
 
 
