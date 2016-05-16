@@ -203,6 +203,13 @@ function startTimer(duration, display) {
     setInterval(timer, 1000);
 }
 
+function clearCart() {
+  document.getElementById("myCheck").checked = false;
+  document.getElementById("myCheck").checked = false;
+  document.getElementById("myCheck").checked = false;
+  
+}
+
 // show the given page, hide the rest
             function show(elementID) {
                 // try to find the requested page and alert if it's not found
