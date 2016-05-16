@@ -2,14 +2,6 @@ var customers = [];
 var num = 0;
 var loggedin = false;
 var products = [];
-var item = {title, price, desc}
-
-products[0]= item{title:"pizza", price:25, desc:"LA Cheese Strapback"};
-products[1]= item{title:"arabic", price:30, desc:"Badlands Arabic Tee"};
-products[2]= item{title:"camo", price:40, desc:"Badlands Camo Shirt"};
-products[3]= item{title:"jersey", price:35, desc:"Badlands Jersey"};
-products[4]= item{title:"trunks", price:30, desc:"LA Cross Trunks"};
-products[5]= item{title:"flamingo", price:25, desc:"Badlands Flamingo Hat"};
 
 
 
@@ -114,7 +106,7 @@ function addToCart() {
     if((a || b || c || d || e || f) && loggedin==true) {
       document.getElementById("demo").innerHTML = "All Items Added To Cart";
       document.getElementById("cart").innerHTML = "<h1>Items In Your Cart:</h1><br>"
-                                                  + "";
+                                                  + "...";
     }
     else {
       if(loggedin==false) {
